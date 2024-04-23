@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-// Fonction pour écrire une chaîne de caractères dans un fichier
+// Fonction pour écrire chaîne de caractères dans fonction
 function writeToFile (filePath, content) {
   fs.writeFile(filePath, content, 'utf-8', (error) => {
     if (error) {
