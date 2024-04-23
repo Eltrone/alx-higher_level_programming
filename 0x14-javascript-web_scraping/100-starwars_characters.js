@@ -11,7 +11,7 @@ request(apiUrl, (error, response, body) => {
   } else {
     const movie = JSON.parse(body);
     const charactersUrls = movie.characters;
-    
+
     charactersUrls.forEach(characterUrl => {
       request(characterUrl, (error, response, body) => {
         if (error) {
